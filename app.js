@@ -8,10 +8,15 @@
         break;
     }
        if( Number(guess) == random){
-        console.log("congrats your guess is correct,ran dom number was ",random);
+        console.log("congrats your guess is correct,random number was ",random);
         break;
     }
-    else{
-        guess = prompt("your guess was wrong, try again");
+    else if(guess< random)
+    {
+       guess=prompt("Hint:Your guess was to small,please try again");
+    }
+     else 
+    {
+      guess=prompt("Hint:Your guess was to large,please try again");
     }
  }
